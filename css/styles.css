@@ -221,6 +221,8 @@ button {
 /* Mobile menu */
 
 .mobile-menu {
+  padding-top: 72px;
+  padding-bottom: 40px;
   position: fixed;
   top: 0;
   left: 0;
@@ -262,7 +264,9 @@ button {
   width: 24px;
   height: 24px;
 }
+
 .mobile-menu-nav {
+  display: flex;
   margin-bottom: auto;
 }
 
@@ -271,6 +275,7 @@ button {
   flex-direction: column;
   gap: 40px;
 }
+
 .mobile-menu-link {
   font-weight: 700;
   font-size: 36px;
@@ -281,7 +286,8 @@ button {
 }
 
 .mobile-menu-link:hover,
-.mobile-menu-link:focus {
+.mobile-menu-link:focus,
+.current {
   color: #4d5ae5;
 }
 .mobile-menu-contact {
@@ -403,6 +409,7 @@ button {
   }
 
   .business-titel {
+    font-size: 56px;
     max-width: 496px;
   }
 
@@ -417,12 +424,8 @@ button {
   }
 
   .business {
-    font-size: 56px;
     line-height: 1.07;
     max-width: 768px;
-  }
-  .business-titel {
-    max-width: 496px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -543,9 +546,7 @@ button {
   padding-top: 96px;
   padding-bottom: 96px;
 }
-.team-title {
-  min-width: 162px;
-  margin: 0 auto;
+.team-titel {
   margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
@@ -819,6 +820,7 @@ button {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 288px;
+  margin-bottom: 16px;
 }
 .media-footer {
   margin: 0 auto;
@@ -868,6 +870,7 @@ button {
   letter-spacing: 0.02em;
   color: #fff;
   text-align: center;
+  margin-bottom: 16px;
 }
 .footer-input {
   border: 1px solid #ffffff;
@@ -970,9 +973,6 @@ button {
     display: flex;
   }
 
-  .subscribe-text {
-    margin-bottom: 16px;
-  }
   .btn-footer {
     min-width: 165px;
   }
